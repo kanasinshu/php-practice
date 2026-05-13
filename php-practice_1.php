@@ -1,31 +1,31 @@
 <?php
 // Q1 変数と文字列
 $name = '金井';
-echo "私の名前は『".$name."』です。";
+echo '私の名前は『'.$name.'』です。';
 // Q2 四則演算
 $num = 5 * 4;
-echo "$num"."\n";
-$total = "$num" / 2;
+echo '$num'."\n";
+$total = '$num' / 2;
 echo $total
 // Q3 日付操作
-echo date("現在時刻は、Y年m月d日 H時i分s秒です");
+echo date('現在時刻は、Y年m月d日 H時i分s秒です');
 
 // Q4 条件分岐-1 if文
-$device = "windows";
+$device = 'windows';
  // mac //
-if ($device === "windows") {
-echo "使用OSは、windowsです。";
+if ($device === 'windows') {
+echo '使用OSは、windowsです。';
 } else { 
-    if ($device === "mac"){
-    echo "使用OSは、macです。";
+    if ($device === 'mac'){
+    echo '使用OSは、macです。';
     } else { 
-    echo "どちらでもありません。";
+    echo 'どちらでもありません。';
     }
 }
 
 // Q5 条件分岐-2 三項演算子
 $age = 17;
-$message = ($age >= 18) ? "成人です。" : "未成年です。";
+$message = ($age >= 18) ? '成人です。' : '未成年です。';
 echo $message;
 
 // Q6 配列
@@ -34,9 +34,10 @@ echo $prefecture[2]."と".$prefecture[3]."は関東地方の都道府県です�
 
 // Q7 連想配列-1
 $prefecture_capital = ['東京都' => '新宿区', '神奈川県' => '横浜市', '千葉県' =>'千葉市', '埼玉県' => 'さいたま市', '茨城県' => '水戸市', '栃木県' => '宇都宮市', '群馬県' => '前橋市'];
+
 foreach ($prefecture_capital as $capital) {
     echo $capital . "\n";
-
+}
 
 // Q8 連想配列-2
 $prefecture_capital = 
